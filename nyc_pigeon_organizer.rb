@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   data.each do |property, hash|
     hash.each do |attribute, array|
       array.each do |name|
-        if !pigeon_list.has_key(name)
+        if !pigeon_list.has_key?(name)
           pigeon_list[name] = {}
         end
         if !pigeon_list[name][property]
